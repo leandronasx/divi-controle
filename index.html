@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divi.Controle - Tenha controle  de sua finanças</title>
+
+    <link rel="shortcut icon" href="img/dollar-coin-money_icon-icons.com_56177.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner">
+            <h1>Divi.Controle</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="painel-controle">
+            <article class="painel-card">
+                <h2>Entradas <span class="painel-icon"><i class="far fa-arrow-alt-circle-up positivo"></i></span></h2>
+                <p id="saldo-entradas">R$ 0.00</p>
+            </article>
+
+            <article class="painel-card">
+                <h2>Saídas <span class="painel-icon"><i class="far fa-arrow-alt-circle-down negativo"></i></span></h2>
+                <p id="saldo-saidas">R$ 0.00</p>
+            </article>
+
+            <article class="painel-card resultado">
+                <h2>Total <span class="painel-icon"><i class="fas fa-dollar-sign"></i></span></h2>
+                <p id="saldo-total">R$ 0.00</p>
+            </article>
+        </section>
+
+        <section class="painel-transacoes">
+            <div class="conteiner">
+                <input id="nova-transacao" type="button" value="+ Nova Transação">
+
+                <table id="tabela-transacao">
+                    <thead>
+                        <tr class="card-corpo">
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="corpo-transacao">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <section class="modal">
+        <div class="conteiner some-mensagem">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <input type="text" id="descricao-transacao" placeholder="Informe a descrição" title="Exemplo: Netflix">
+            <input type="text" id="valor-transacao" placeholder="Informe o valor" title="Exemplo: -100">
+            <input type="text" id="data-transacao" placeholder="Informe a data" title="Exemplo: 12/12/2022">
+            
+            <input type="button" value="CONFIRMAR" id="confirmar-transacao">
+        </div>
+
+        <div class="mensagem">
+            <p>Preenchimento inválido da transação!!!</p>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="conteiner">
+            <p>Divi.Controle</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

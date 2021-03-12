@@ -1,0 +1,246 @@
+/* roxo rgb(75, 4, 108) */
+
+/* roxo 2 rgb(97, 55, 179)  */
+
+/* verde do card resultado: rgb(74, 170, 34) */
+
+/* verde fonte rgb(54, 99, 70) */
+
+/* vermelho fonte rgb(82, 31, 38) */
+
+/* preto rgb(24, 24, 24) */
+
+/* preto fraco rgb(50, 50, 50) */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+/* Geral */
+.positivo{
+    color:rgb(42, 128, 72);
+    text-shadow: 1px 1px 1px black;
+}
+.negativo{
+    color: rgb(168, 28, 18);
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+.conteiner{
+    width: 960px;
+    margin: 0 auto;
+}
+.header{
+    background-color: rgb(75, 4, 108);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*  */
+.painel-controle{
+    background-color: rgb(75, 4, 108);
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.painel-controle .painel-card {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(40, 40, 40);
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: -20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+.painel-controle .painel-card:nth-child(2) {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.resultado{
+    background-color: rgb(74, 170, 34) !important;
+}
+.painel-icon{
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* painel-transacoes */
+.painel-transacoes{
+    background-color: rgb(24, 24, 24);
+    min-height: 70vh;
+    padding-top: 65px;
+}
+.painel-transacoes input, .painel-transacoes th, .painel-transacoes td{
+    font-family:'Courier New', Courier, monospace;
+}
+/* botao nova transacao */
+#nova-transacao{
+    background-color: initial;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+#nova-transacao:hover{
+    color: orangered;
+}
+/* Tabela */
+#tabela-transacao{
+    width: 100%;
+}
+#tabela-transacao tr{
+    padding: 20px 0;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+#tabela-transacao  tr:hover{
+    background-color: rgb(50, 50, 50);
+}
+#tabela-transacao th{
+    font-size: 1.2rem;
+}
+#tabela-transacao td{
+   text-align: center;
+}
+i.fa-trash-alt:hover{
+    color: #000;
+}
+
+
+
+
+/* footer */
+.footer{
+    background-color: rgb(24, 24, 24);
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Modal */
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .conteiner{
+    width: 400px;
+}
+.modal input{
+    padding: 15px 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+}
+.modal input::placeholder{
+    color: #000;
+}
+.modal input[type="text"]{
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+.modal input[type="button"]{
+    background-color: green;
+    color: #eee;
+    cursor: pointer;
+}
+.modal .close-modal{
+    font-size: 2rem;
+    background-color: initial;
+    position: absolute;
+    z-index: 11;
+    right: 30px;
+    top: 30px;
+}
+.modal .close-modal i:hover{
+    color: red;
+}
+
+.modal .mensagem{
+    align-self: flex-end;
+    width: 500px;
+    display: none;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    background-color: rgb(253, 53, 53);
+    color: #fff;
+    font-size: 1.2rem;
+    border: 1px solid #eee;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+
+@media (max-width: 1034px){
+    .header .conteiner{
+        width: 100%;
+    }
+    .painel-controle{
+        flex-direction: column;
+        align-items: center;
+    }
+    .painel-controle .painel-card{
+        margin-bottom: 20px;
+    }
+
+    .painel-transacoes .conteiner{
+        width: 100%;
+    }
+    .painel-transacoes #tabela-transacao{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #nova-transacao{
+        margin-left: 30px;
+    }
+
+    .footer .conteiner{
+        width: 100%;
+    }
+}
